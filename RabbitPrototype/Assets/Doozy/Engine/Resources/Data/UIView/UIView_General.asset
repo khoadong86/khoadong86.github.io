@@ -16,4 +16,5 @@ MonoBehaviour:
   DatabaseType: 2
   Names:
   - Unnamed
-  - UI_Home
+  - Home
+  - In-Game
