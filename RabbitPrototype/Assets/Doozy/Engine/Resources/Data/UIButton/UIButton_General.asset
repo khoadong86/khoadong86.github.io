@@ -16,7 +16,10 @@ MonoBehaviour:
   DatabaseType: 0
   Names:
   - Back
-  - Unnamed
-  - Play
+  - Confirm
   - Info
+  - Ok
   - Pause
+  - Play
+  - Unnamed
+  - Upgrade
