@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1452049700041732542}
   - component: {fileID: 1452049700041732537}
   - component: {fileID: 1641570112}
-  - component: {fileID: 1641570103}
   - component: {fileID: 1641570104}
   - component: {fileID: 1641570105}
   - component: {fileID: 1641570106}
@@ -26,6 +25,8 @@ GameObject:
   - component: {fileID: 1641570114}
   - component: {fileID: 4685981383500072436}
   - component: {fileID: 8058051115687306774}
+  - component: {fileID: 965931096}
+  - component: {fileID: 6844718523544431132}
   m_Layer: 13
   m_Name: 1x1 Red Enemy
   m_TagString: Untagged
@@ -74,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01754710d9f92ec4d9a21b81f5682667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Model: {fileID: 0}
+  Model: {fileID: 6348254549673767423}
   CurrentHealth: 0
   Invulnerable: 0
   InitialHealth: 30
@@ -128,20 +129,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1641570103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1452049700041732539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97230edd623230e4ea486ef91a6d23e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Label: MoveFollow
-  MinimumDistance: 50
 --- !u!114 &1641570104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +145,7 @@ MonoBehaviour:
   - StateName: None
     Actions:
       array:
-      - {fileID: 1641570103}
+      - {fileID: 4685981383500072436}
     Transitions:
       array:
       - Decision: {fileID: 1641570114}
@@ -167,7 +154,8 @@ MonoBehaviour:
   - StateName: DetectTarget
     Actions:
       array:
-      - {fileID: 1641570103}
+      - {fileID: 965931096}
+      - {fileID: 6844718523544431132}
     Transitions:
       array:
       - Decision: {fileID: 8058051115687306774}
@@ -199,8 +187,8 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  RunSpeed: 16
-  AutoRun: 0
+  RunSpeed: 4
+  AutoRun: 1
   AutoRunThreshold: 0.6
 --- !u!114 &1641570106
 MonoBehaviour:
@@ -225,12 +213,12 @@ MonoBehaviour:
   Movement: 0
   InputAuthorized: 1
   AnalogInput: 0
-  WalkSpeed: 6
+  WalkSpeed: 0.5
   ShouldSetMovement: 1
-  IdleThreshold: 0.05
+  IdleThreshold: 0.1
   Acceleration: 10
   Deceleration: 10
-  InterpolateMovementSpeed: 0
+  InterpolateMovementSpeed: 1
   WalkParticles: []
   TouchTheGroundParticles: []
   TouchTheGroundSfx: []
@@ -536,6 +524,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: FindTarget
+--- !u!114 &965931096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452049700041732539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97230edd623230e4ea486ef91a6d23e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: FollowTarget
+  MinimumDistance: 1
+--- !u!114 &6844718523544431132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452049700041732539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad888dc2bbe117441bde19ec878ff32c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: RotateToTarget
+  LockRotationX: 0
 --- !u!1 &6348254549673767423
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +603,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f1759953e12d75f4ba935e721dc202d6, type: 2}
+  - {fileID: 2100000, guid: 82f4774fd7cc642778a91835c8f20a40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -624,6 +640,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1452049700041732536}
     m_Modifications:
+    - target: {fileID: 121899891634036534, guid: 40442f24aef653141a9ad4dd236ce6f1,
+        type: 3}
+      propertyPath: ParticlesPrefab
+      value: 
+      objectReference: {fileID: 7415344032298132670, guid: f6c0cd5f90acb46f48e3a1e758158931,
+        type: 3}
     - target: {fileID: 2916427525354219933, guid: 40442f24aef653141a9ad4dd236ce6f1,
         type: 3}
       propertyPath: m_Name
