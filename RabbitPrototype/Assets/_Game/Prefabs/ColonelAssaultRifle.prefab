@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 114426053428167632}
   - component: {fileID: 114591608567984394}
   - component: {fileID: -6282721447207995984}
-  - component: {fileID: 4144780019590736335}
+  - component: {fileID: 569424047631508743}
+  - component: {fileID: 6521756399139325765}
   m_Layer: 0
   m_Name: ColonelAssaultRifle
   m_TagString: Untagged
@@ -119,7 +120,7 @@ MonoBehaviour:
   CameraTargetSpeed: 5
   Target: {fileID: 0}
   DrawDebugRadius: 1
---- !u!114 &4144780019590736335
+--- !u!114 &569424047631508743
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,20 +129,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 1421979490917578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdf6147897725a548ae8c694c8ecb82c, type: 3}
+  m_Script: {fileID: 11500000, guid: 03aaf62627f364a7d92d307729fe738d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponName: ColonelAssaultRifle
+  Mode: 1
+  PerformRaycast: 1
+  DrawLaser: 1
+  RaycastOriginOffset: {x: 0, y: 0, z: 0}
+  LaserOriginOffset: {x: 0, y: 0, z: 0}
+  LaserMaxDistance: 50
+  LaserCollisionMask:
+    serializedVersion: 2
+    m_Bits: 8192
+  LaserWidth: {x: 0.05, y: 0.05}
+  LaserMaterial: {fileID: 0}
+--- !u!114 &6521756399139325765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421979490917578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7ce0b8cf4b34859b9e359283b2e7f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeaponName: 
   WeaponCurrentlyActive: 1
   TriggerMode: 1
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 0.22
+  TimeBetweenUses: 1
   TimeBetweenUsesReleaseInterruption: 1
-  MagazineBased: 1
+  MagazineBased: 0
   MagazineSize: 30
   AutoReload: 0
-  ReloadTime: 1
+  ReloadTime: 2
   AmmoConsumedPerShot: 0
   AutoDestroyWhenEmpty: 0
   AutoDestroyWhenEmptyDelay: 1
@@ -153,8 +177,8 @@ MonoBehaviour:
   WeaponUseTransform: {fileID: 0}
   LeftHandHandle: {fileID: 0}
   RightHandHandle: {fileID: 0}
-  ModifyMovementWhileAttacking: 1
-  MovementMultiplier: 0.5
+  ModifyMovementWhileAttacking: 0
+  MovementMultiplier: 0
   PreventAllMovementWhileInUse: 0
   RecoilForce: 0
   Animators: []
@@ -162,11 +186,11 @@ MonoBehaviour:
   IdleAnimationParameter: 
   StartAnimationParameter: 
   DelayBeforeUseAnimationParameter: 
-  SingleUseAnimationParameter: Shoot
+  SingleUseAnimationParameter: 
   UseAnimationParameter: 
   DelayBetweenUsesAnimationParameter: 
   StopAnimationParameter: 
-  ReloadStartAnimationParameter: Reload
+  ReloadStartAnimationParameter: 
   ReloadAnimationParameter: 
   ReloadStopAnimationParameter: 
   WeaponAngleAnimationParameter: 
@@ -179,22 +203,12 @@ MonoBehaviour:
   InitializeOnStart: 0
   Interruptable: 0
   Flipped: 0
-  ProjectileSpawnOffset: {x: 0.15, y: 0, z: 1.2}
+  ProjectileSpawnOffset: {x: 0, y: 0, z: 0}
+  ProjectilesPerShot: 1
   Spread: {x: 0, y: 0, z: 0}
   RotateWeaponOnSpread: 0
   RandomSpread: 1
-  SpawnPosition: {x: 0.15, y: 0, z: 1.2}
-  Mode: 1
-  HitscanTargetLayers:
-    serializedVersion: 2
-    m_Bits: 8448
-  HitscanMaxDistance: 100
-  DamageCaused: 15
-  DamageCausedInvincibilityDuration: 0.2
-  HitDamageable: {fileID: 0}
-  DamageableImpactParticles: {fileID: 5693645334419586965}
-  HitNonDamageable: {fileID: 0}
-  NonDamageableImpactParticles: {fileID: 5693645334419586965}
+  SpawnPosition: {x: 0, y: 0, z: 0}
   TestShootButton: 0
 --- !u!1 &72133274412583627
 GameObject:
