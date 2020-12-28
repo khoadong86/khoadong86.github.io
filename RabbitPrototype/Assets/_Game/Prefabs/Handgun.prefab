@@ -330,7 +330,7 @@ MonoBehaviour:
   Spread: {x: 0, y: 0, z: 0}
   RotateWeaponOnSpread: 0
   RandomSpread: 1
-  SpawnPosition: {x: 0, y: 0.65999997, z: 0.57}
+  SpawnPosition: {x: 0, y: 0.16, z: 0.57}
   TestShootButton: 0
 --- !u!95 &95333093895194968
 Animator:
@@ -423,10 +423,10 @@ MonoBehaviour:
   DrawLaser: 1
   RaycastOriginOffset: {x: 0, y: 0, z: 0}
   LaserOriginOffset: {x: 0, y: 0, z: 0}
-  LaserMaxDistance: 50
+  LaserMaxDistance: 0.5
   LaserCollisionMask:
     serializedVersion: 2
-    m_Bits: 8192
+    m_Bits: 8448
   LaserWidth: {x: 0.05, y: 0.05}
   LaserMaterial: {fileID: 2100000, guid: 83ebca906bf3a4a2a93258080186894a, type: 2}
 --- !u!1 &1644065306887236

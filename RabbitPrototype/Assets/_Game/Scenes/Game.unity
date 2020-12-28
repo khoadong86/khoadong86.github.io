@@ -44173,6 +44173,7 @@ GameObject:
   - component: {fileID: 225614002903940137}
   - component: {fileID: 114760156614107025}
   - component: {fileID: 114270736342416003}
+  - component: {fileID: 1411440829665488}
   m_Layer: 0
   m_Name: JoystickKnob
   m_TagString: Untagged
@@ -44180,6 +44181,83 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1411440829665488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411440829665487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a286771fa86194e979f187a1691a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonPressedFirstTime:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114714367139665991}
+        m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.InputManager, MoreMountains.TopDownEngine
+        m_MethodName: ShootButtonDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ButtonReleased:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114714367139665991}
+        m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.InputManager, MoreMountains.TopDownEngine
+        m_MethodName: ShootButtonUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ButtonPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114714367139665991}
+        m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.InputManager, MoreMountains.TopDownEngine
+        m_MethodName: ShootButtonDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DisabledSprite: {fileID: 0}
+  DisabledChangeColor: 0
+  DisabledColor: {r: 1, g: 1, b: 1, a: 1}
+  PressedSprite: {fileID: 0}
+  PressedChangeColor: 0
+  PressedColor: {r: 1, g: 1, b: 1, a: 1}
+  HighlightedSprite: {fileID: 0}
+  HighlightedChangeColor: 0
+  HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+  PressedOpacity: 1
+  IdleOpacity: 1
+  DisabledOpacity: 1
+  PressedFirstTimeDelay: 0
+  ReleasedDelay: 0
+  BufferDuration: 0
+  Animator: {fileID: 0}
+  IdleAnimationParameterName: Idle
+  DisabledAnimationParameterName: Disabled
+  PressedAnimationParameterName: Pressed
+  MouseMode: 0
 --- !u!1 &1423034177368053
 GameObject:
   m_ObjectHideFlags: 0
@@ -44857,6 +44935,7 @@ GameObject:
   - component: {fileID: 222738035744271231}
   - component: {fileID: 225721413784233333}
   - component: {fileID: 114489445416805819}
+  - component: {fileID: 1895049969369674}
   m_Layer: 0
   m_Name: Joystick
   m_TagString: Untagged
@@ -44864,6 +44943,83 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &1895049969369674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895049969369673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a286771fa86194e979f187a1691a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonPressedFirstTime:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114714367139665991}
+        m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.InputManager, MoreMountains.TopDownEngine
+        m_MethodName: ShootButtonDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ButtonReleased:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114714367139665991}
+        m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.InputManager, MoreMountains.TopDownEngine
+        m_MethodName: ShootButtonUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ButtonPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114714367139665991}
+        m_TargetAssemblyTypeName: MoreMountains.TopDownEngine.InputManager, MoreMountains.TopDownEngine
+        m_MethodName: ShootButtonDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DisabledSprite: {fileID: 0}
+  DisabledChangeColor: 0
+  DisabledColor: {r: 1, g: 1, b: 1, a: 1}
+  PressedSprite: {fileID: 0}
+  PressedChangeColor: 0
+  PressedColor: {r: 1, g: 1, b: 1, a: 1}
+  HighlightedSprite: {fileID: 0}
+  HighlightedChangeColor: 0
+  HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+  PressedOpacity: 1
+  IdleOpacity: 1
+  DisabledOpacity: 1
+  PressedFirstTimeDelay: 0
+  ReleasedDelay: 0
+  BufferDuration: 0
+  Animator: {fileID: 0}
+  IdleAnimationParameterName: Idle
+  DisabledAnimationParameterName: Disabled
+  PressedAnimationParameterName: Pressed
+  MouseMode: 0
 --- !u!1 &1895060885474637
 GameObject:
   m_ObjectHideFlags: 0
@@ -45116,7 +45272,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: 2
   m_CullingMask:
@@ -48213,7 +48369,7 @@ MonoBehaviour:
   InputDetectionActive: 1
   PlayerID: Player1
   AutoMobileDetection: 1
-  InputForcedMode: 2
+  InputForcedMode: 1
   ForceWeaponMode: 1
   WeaponForcedMode: 0
   HideMobileControlsInEditor: 0
@@ -48905,7 +49061,7 @@ MonoBehaviour:
   - {fileID: 0}
   PauseScreen: {fileID: 1253938074506939}
   DeathScreen: {fileID: 1041694924381245}
-  Buttons: {fileID: 225035570449613539}
+  Buttons: {fileID: 0}
   Arrows: {fileID: 225004372504476855}
   Joystick: {fileID: 225721413784233333}
   PointsText: {fileID: 0}
@@ -49402,7 +49558,7 @@ Canvas:
   m_GameObject: {fileID: 1182067920000691}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 20646996888046739}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
