@@ -225,6 +225,7 @@ namespace MoreMountains.TopDownEngine
         /// <param name="weaponID"></param>
 		protected virtual void EquipWeapon(string weaponID)
         {
+            Debug.Log("Equip Weapon");
             if ((weaponID == _emptySlotWeaponName) && (CharacterHandleWeapon != null))
             {
                 MMInventoryEvent.Trigger(MMInventoryEventType.UnEquipRequest, null, WeaponInventoryName, WeaponInventory.Content[0], 0, 0);

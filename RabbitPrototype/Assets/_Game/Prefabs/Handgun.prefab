@@ -281,7 +281,7 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 0.1
+  TimeBetweenUses: 1
   TimeBetweenUsesReleaseInterruption: 1
   MagazineBased: 0
   MagazineSize: 30
@@ -325,12 +325,12 @@ MonoBehaviour:
   InitializeOnStart: 1
   Interruptable: 0
   Flipped: 0
-  ProjectileSpawnOffset: {x: 0, y: 0.16, z: 0.57}
+  ProjectileSpawnOffset: {x: 0, y: 0, z: 0}
   ProjectilesPerShot: 1
   Spread: {x: 0, y: 0, z: 0}
   RotateWeaponOnSpread: 0
   RandomSpread: 1
-  SpawnPosition: {x: 0, y: 0.16, z: 0.57}
+  SpawnPosition: {x: 0, y: 0, z: 0}
   TestShootButton: 0
 --- !u!95 &95333093895194968
 Animator:
@@ -423,7 +423,7 @@ MonoBehaviour:
   DrawLaser: 1
   RaycastOriginOffset: {x: 0, y: 0, z: 0}
   LaserOriginOffset: {x: 0, y: 0, z: 0}
-  LaserMaxDistance: 0.5
+  LaserMaxDistance: 50
   LaserCollisionMask:
     serializedVersion: 2
     m_Bits: 8448
@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_ImpulseDefinition:
     m_ImpulseChannel: 1
     m_RawSignal: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
-    m_AmplitudeGain: 1
+    m_AmplitudeGain: 0.5
     m_FrequencyGain: 1
     m_RepeatMode: 0
     m_Randomize: 1
