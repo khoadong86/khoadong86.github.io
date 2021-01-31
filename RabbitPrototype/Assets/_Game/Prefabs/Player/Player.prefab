@@ -45896,8 +45896,6 @@ GameObject:
   - component: {fileID: 4030099465611578201}
   - component: {fileID: 4030099465611578200}
   - component: {fileID: 4030099465611578215}
-  - component: {fileID: 6062435004915017637}
-  - component: {fileID: 2455310885983439230}
   m_Layer: 10
   m_Name: Ability
   m_TagString: Player
@@ -46201,69 +46199,6 @@ MonoBehaviour:
   RotationSpeedResetSpeed: 2
   ForcedRotation: 0
   ForcedRotationDirection: {x: 0, y: 0, z: 0}
---- !u!114 &6062435004915017637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584930761712353832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a07c6668aa55403790d27b575279549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
-  AbilityStopSfx: {fileID: 0}
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  InitialWeapon: {fileID: 0}
-  CanPickupWeapons: 1
-  WeaponUseFeedback: {fileID: 0}
-  WeaponAttachment: {fileID: 1699956157}
-  ProjectileSpawn: {fileID: 0}
-  AutomaticallyBindAnimator: 0
-  AmmoDisplayID: 0
-  AutoIK: 0
-  ContinuousPress: 1
-  GettingHitInterruptsAttack: 0
-  BufferInput: 0
-  NewInputExtendsBuffer: 0
-  MaximumBufferDuration: 0.25
-  RequiresPerfectTile: 0
-  CurrentWeapon: {fileID: 0}
---- !u!114 &2455310885983439230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584930761712353832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05b56d00552d6cd44b46000232e9d83a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
-  AbilityStopSfx: {fileID: 0}
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  MainInventoryName: MainInventory
-  WeaponInventoryName: WeaponInventory
-  HotbarInventoryName: 
-  WeaponRotationMode: 0
-  AutoPickItems: []
-  AutoEquipWeaponOnStart: {fileID: 11400000, guid: 6c65be19be8414ea4860c22cd58be137,
-    type: 2}
-  CharacterHandleWeapon: {fileID: 6062435004915017637}
 --- !u!1 &2455310884421828232
 GameObject:
   m_ObjectHideFlags: 0
@@ -46595,6 +46530,8 @@ GameObject:
   - component: {fileID: 79162977}
   - component: {fileID: 79162968}
   - component: {fileID: 2601169287458047213}
+  - component: {fileID: 9188111914042816809}
+  - component: {fileID: 79162969}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -46617,6 +46554,7 @@ Transform:
   - {fileID: 2455310884421828233}
   - {fileID: 1699956157}
   - {fileID: 1584930761712353835}
+  - {fileID: 2450549750596212694}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -46672,7 +46610,7 @@ MonoBehaviour:
   DirectionOnSpawn: 0
   CharacterAnimator: {fileID: 0}
   UseDefaultMecanim: 1
-  CharacterModel: {fileID: 2455310885921924911}
+  CharacterModel: {fileID: 2455310885451676109}
   SendStateChangeEvents: 1
   SendStateUpdateEvents: 1
   AdditionalAbilityNodes:
@@ -46691,7 +46629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01754710d9f92ec4d9a21b81f5682667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Model: {fileID: 0}
+  Model: {fileID: 3991789644377479575}
   CurrentHealth: 100
   Invulnerable: 0
   InitialHealth: 10
@@ -46812,6 +46750,70 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9188111914042816809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2455310885921924911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05b56d00552d6cd44b46000232e9d83a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 0}
+  AbilityStopSfx: {fileID: 0}
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  MainInventoryName: MainInventory
+  WeaponInventoryName: WeaponInventory
+  HotbarInventoryName: 
+  WeaponRotationMode: 0
+  AutoPickItems: []
+  AutoEquipWeaponOnStart: {fileID: 11400000, guid: f83124d1dde2640889abcb406f30b84a,
+    type: 2}
+  CharacterHandleWeapon: {fileID: 79162969}
+--- !u!114 &79162969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2455310885921924911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a07c6668aa55403790d27b575279549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 0}
+  AbilityStopSfx: {fileID: 0}
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  InitialWeapon: {fileID: 7223803661364369051, guid: f4547521a009c403cae3df2658b66470,
+    type: 3}
+  CanPickupWeapons: 1
+  WeaponUseFeedback: {fileID: 0}
+  WeaponAttachment: {fileID: 1699956157}
+  ProjectileSpawn: {fileID: 0}
+  AutomaticallyBindAnimator: 0
+  AmmoDisplayID: 0
+  AutoIK: 0
+  ContinuousPress: 1
+  GettingHitInterruptsAttack: 0
+  BufferInput: 0
+  NewInputExtendsBuffer: 0
+  MaximumBufferDuration: 0.25
+  RequiresPerfectTile: 0
+  CurrentWeapon: {fileID: 0}
 --- !u!1 &2552883983756936634
 GameObject:
   m_ObjectHideFlags: 0
@@ -73152,6 +73154,96 @@ Transform:
   m_Father: {fileID: 2703147427035466012}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -11.74, y: 7.6, z: -67.27}
+--- !u!1001 &2455310885073535652
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2455310885921924908}
+    m_Modifications:
+    - target: {fileID: 478184320, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_Name
+      value: VacuumContainer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082694107, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082694108, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082694110, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421979490917578, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_Name
+      value: Vacuum
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818326261912946, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818326261912946, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818326261912946, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818326261912946, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818326261912946, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818326261912946, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818326261912946, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818326261912946, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818326261912946, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818326261912946, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818326261912946, guid: f4547521a009c403cae3df2658b66470, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223803661364369051, guid: f4547521a009c403cae3df2658b66470,
+        type: 3}
+      propertyPath: VacuumArea
+      value: 
+      objectReference: {fileID: 2455310884595417381}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4547521a009c403cae3df2658b66470, type: 3}
+--- !u!4 &2450549750596212694 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4818326261912946, guid: f4547521a009c403cae3df2658b66470,
+    type: 3}
+  m_PrefabInstance: {fileID: 2455310885073535652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2455310884595417381 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 478184321, guid: f4547521a009c403cae3df2658b66470,
+    type: 3}
+  m_PrefabInstance: {fileID: 2455310885073535652}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2455310885925072422
 PrefabInstance:
   m_ObjectHideFlags: 0

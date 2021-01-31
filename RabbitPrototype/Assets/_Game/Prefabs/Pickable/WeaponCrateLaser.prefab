@@ -826,7 +826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fd837a0abc28d4d91c55590bd2c090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 11400000, guid: 92a5127290dfd744082bb0652a4ce2b3, type: 2}
+  Item: {fileID: 11400000, guid: f83124d1dde2640889abcb406f30b84a, type: 2}
   Quantity: 1
   PickableIfInventoryIsFull: 0
   PickAsMuchQuantityAsPossible: 0

@@ -18,7 +18,7 @@ public class BuildingSpawner : MonoBehaviour
                 int t = Random.Range(0, 1);
                 int h = Random.Range(1, 4);
                 Vector3 pos = new Vector3(i, h/2f, j);
-                if (Random.Range(0, 2) == 0)
+                if (Random.Range(0, 4) == 0)
                 {
                     GameObject newBuilding = Instantiate(BuildingsPrefabs[0], pos, Quaternion.identity);
                     newBuilding.transform.localScale = new Vector3(1f, h, 1f);
